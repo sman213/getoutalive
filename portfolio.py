@@ -1,0 +1,572 @@
+from re import X
+
+
+player_hp = 100
+sanity = 100
+
+print("//////////////////////////////////////////////////////////////////")
+print("/////////         /////        /////          ////////////////////")
+print("///////   ////////////   /////////////   /////////////////////////")
+print("//////   ///      ///       /////////   //////////////////////////")
+print("//////   ////  /////   /////////////   ///////////////////////////")
+print("//////        /////        ////////   ////////////////////////////")
+print("//////////////////////////////////////////////////////////////////")
+print("/////          //////    /////   /////            ////////////////")
+print("////    ///   //////    /////   //////////   /////////////////////")
+print("///    ///   //////    /////   //////////   //////////////////////")
+print("//    ///   //////    /////   //////////   ///////////////////////")
+print("//         ///////          ///////////   ////////////////////////")
+print("//////////////////////////////////////////////////////////////////")
+print("////////     ///////   ////////   /////   /////   ////        ////")
+print("//////   //   /////   ////////   /////   ////   /////   //////////")
+print("/////   ///   ////   ////////   /////   ///   //////       ///////")
+print("////          ///   ////////   /////   //   ///////    ///////////")
+print("///   /////   //        ///   /////       ////////        ////////")
+print("//////////////////////////////////////////////////////////////////")
+print("///////////////// Created by: Steve Nicolai //////////////////////")
+print("//////////////////////////////////////////////////////////////////")
+print("")
+print("")
+print("/////////////////...Let the story begin...////////////////////////")
+print("")
+print("")
+print("Uhhg.............")
+print("")
+print("Ow!......my head!")
+print("")
+print("......Where am I?")
+print("")
+print("What happened...?")
+print("")
+print("lets see.......The last thing I remember is ")
+print("driving home from work and my radio......it started acting strange.")
+print("")
+print("it was playing music....and then it.....")
+print("")
+print("it was like..... the singer...started to speak to me...")
+print("")
+print("it went from singing to talking and then....")
+print("")
+print("the singer began to sound strange... like something else was speaking through it...")
+print("")
+print("it mentioned things about me ive never told anyone before....")
+print("and then I looked up and.....")
+print("")
+print("well....")
+print("")
+print("here I am......")
+print("")
+print("lets make sure I didnt suffer any brain damage")
+print("")
+while True:
+    answer = input("The first president of the United States is...")
+    if answer.lower()== ("george washington"):
+        break
+    elif answer != ("george washington"): 
+        print("wait..no thats not right..thats not a good sign")
+        print("")
+        print("lets try that again...")
+        continue
+    
+print("")    
+print("great....now what was my name again?")
+print("")
+name = input("Enter your name:")
+print("")
+print("")
+print("")
+print("")
+print("               ========================")
+print("               ===== GAME STARTED =====")
+print("               ========================")
+print("")
+print("")
+print("Thats right.....its", name)
+print("")
+print("Now...where am I exactly?.........I cant see a thing")
+print("")
+print("This doesnt make sense..... I was in a vehicle the last I recall")
+print("")
+print("what should I do?")
+print("")
+def first_menu():
+    print("             ===Choose Wisely===")
+    print("")
+    print("     [Name:",name,"Sanity:", sanity,"HP:", player_hp, "]                        ")
+    print("")
+    print("|------------------------------------------|")
+    print("|1. Stay quiet and wait for help to come.  |")
+    print("|------------------------------------------|")
+    print("|2. Freak out and scream for help!         |")
+    print("|------------------------------------------|")
+    print("|3. Take out phone and call for help.      |")
+    print("|------------------------------------------|")
+    print("|4. Feel around for a way out.             |")
+    print("|------------------------------------------|")
+    print("")
+while True:
+    
+    first_menu()
+    option = input("Choose an option:")
+    if option == "1":
+        print("")
+        print("     [Name:",name,"Sanity:", sanity,"HP:", player_hp, "]                        ")
+        print("")
+        print("its been nearly 4 hours.....I dont think anyone is coming.")
+        print("")
+        continue
+    elif option == "2":
+        print("")
+        print("HEEEEEEEEELLLLLLLLLLLPPPPPPP!!!!!!")
+        print("")
+        print("a low growl begins to shake the room around you...you immediately shut up...")
+        print("the whole area is vibrating.... your head feels like its about to explode...")
+        psychological_damage = 15
+        sanity = sanity - psychological_damage
+        print("")
+        print("-15 Sanity!")
+        print("")
+        print("I cant make that mistake again... ill lose my mind!")
+        print("")
+        continue
+    elif option == "3":
+        print("")
+        print("you take out your phone to dial 911......but there is no signal")
+        print("However, you remember that your phone has a flashlight.....you turn on the flashlight!")
+        print("")
+        break
+    elif option == "4":
+        print("")
+        print("its pitch black......You feel around for a wall or anything you can grab onto")
+        print("you take a few steps and........ouch!!!")
+        print("something sharp pierced your shoe!")
+        print("")
+        print("-5 HP!")
+        damage = 5
+        player_hp = player_hp - damage
+        print("")
+        continue
+    else:
+        print("Come on now, pull yourself together, what can we do to get out of here...")
+        print("")
+        print("")
+        continue
+print("you can finally see.....")
+print("")
+print("you notice that the walls around you have nothing on them..")
+print("")
+print("the floor is filled with randomm bits of what appears to be rusted scrap metal")
+print("")
+print("lots of mildew and fungus too")
+print("")
+print("theres no windows anywhere....")
+print("")
+print("is this.....is this some sort of bunker?")
+print("")
+print("you see a large rusty door and open it...")
+print("")
+print("it opens to a long corridor with multiple doors and hallway.")
+print("")
+print("What do you want to do?")
+print("")
+def second_menu():
+    print("             ===Choose Wisely===")
+    print("")
+    print("     [Name:",name,"Sanity:", sanity,"HP:", player_hp, "]                        ")
+    print("")
+    print("|------------------------------------------|")
+    print("|1. Walk straight back as far as you can.  |")
+    print("|------------------------------------------|")
+    print("|2. Take the first door on your right.     |")
+    print("|------------------------------------------|")
+    print("|3. Take the first door on your left.      |")
+    print("|------------------------------------------|")
+    print("|4. Turn down the next hallway you see.    |")
+    print("|------------------------------------------|")
+    print("")
+while True:
+    second_menu()
+    option = input("Choose an option:")
+    if option == "1":
+        print("")
+        print("you walk straight back......")
+        print("")
+        print("as you reach the end of the hallway you look down and notice a huge drop off.....")
+        print("its like the hallway was ripped away.... i cant even see a bottom.")
+        print("I have to turn back!")
+        print("")
+        continue
+    elif option == "2":
+        print("")
+        print("you turn right and open a heavy metal door....")
+        print("")
+        print("As the door swings open it makes a rusted metal creek....")
+        print("immediately you see movement within this room and a loud scream....")
+        print("Its another person.....except they look.......oh God...")
+        print("the person has no skin.....")
+        print("SHUTTTTTTT ITTTTTTTTT!!!!! the person howled as they lunged to close the door....")
+        print("immediately I shut the door... i heard it lock.... and then sobbing...")
+        print("oh God.......what did i just see?!")
+        print("")
+        print("-15 Sanity!")
+        psychological_damage = 15
+        sanity = sanity - psychological_damage
+        print("")
+        continue
+    elif option == "3":
+        print("")
+        print("you turn to your left and open the door...")
+        print("the door opens into a larger opening...you shine your flashlight")
+        print("the larger opening appears to be a stairwell....")
+        print("as your looking you hear a loud growl coming from down the hall your standing in...")
+        print("you hear the sound of scrap metal twisting and growls echoing closer....")
+        print("theres no time to stay put.... you walk into the stairwell and shut the door behind you...")
+        print("")
+        break
+    elif option == "4":
+        print("")
+        print("You shine your flashlight as you move down the corridor...")
+        print("as you walk down the corridor you see a corner leading into a hallway.")
+        print("you approach the hallway to turn the corner and shine the flashlight into it")
+        print("As the light shines down the hallway suddenly the light seems to want to illuminate empty space...")
+        print("like when you shine a laser into fog and you can see the whole beam because its reflecting off the fog,")
+        print("but this was light refracting and bending off of something i couldnt see....")
+        print("The light began to twist and collidascope into an almost psychadelic visual....")
+        print("Never before have I seen something so mesmerizing....")
+        print("I had to know what it felt like......I reached my hand out to touch the light...")
+        print("Instantly I felt searing pain.... like someone rubbed salt into a serious burn!")
+        print("Immediately I yanked my hand back in agony and the top half of my fingers were completely flayed!")
+        print("The space that I illuminated began to split apart...like a tear in fabric and a dark void appeared...")
+        print("I heard a horrible growl from within the void.........RUNNN!")
+        print("")
+        print("-15 HP!")
+        print("-10 Sanity!")
+        print("")
+        damage = 15
+        psychological_damage = 10
+        sanity = sanity - psychological_damage
+        player_hp = player_hp - damage
+        print("")
+        continue
+    else:
+        print("come on...think!!!")
+        print("")
+        print("")
+        continue
+
+print("That was a close one.....")
+print("")
+print("I dont even want to imagine what would happen if that....thing....got me.")
+print("")
+print("what was that thing? where on earth even am I?")
+print("")
+print("....theres no time to dwell on it, I have to find a way out.....")
+print("")
+print("Well heres a stairwell, stairs only tend to go two different ways......")
+print("")
+print("Now which way should I go?")
+print("")
+def third_menu():
+    print("             ===Choose Wisely===")
+    print("")
+    print("     [Name:",name,"Sanity:", sanity,"HP:", player_hp, "]                        ")
+    print("")
+    print("|------------------------------------------|")
+    print("|1. Walk up the stairwell.                 |")
+    print("|------------------------------------------|")
+    print("|2. Walk down the stairwell.               |")
+    print("|------------------------------------------|")
+    print("")
+while True:
+    third_menu()
+    option = input("Choose an option:")
+    if option == "1":
+        print("")
+        print("Well its looking like this may be some kind of bunker, logic says the way out is up if thats the case....")
+        print("")
+        break
+    elif option == "2":
+        print("Into the abyss we go....")
+        print("As I make my way down the metal steps I began to take notice how my steps made less and less noise...")
+        print("This was incredible! How is this even possible...well.....then again how is any of this even possible...")
+        print("I began to stomp as hard as I could and it was like the enviroment was consuming the sound.")
+        print("Then there was no noise left....")
+        print("I tried to speak and nothing came out.")
+        print("I lost track at how long ive been decending these steps.... my God it feels like an eternity.")
+        print("I finally start to see a bottom floor.... its a copper colored rusty cement bottom.")
+        print("By the time I reached the bottom they only thing I could hear was a ringing...")
+        print("the kind of ringing you hear after going deaf from a loud boom.")
+        print(".......")
+        print("the ringing is getting louder..... ")
+        print(".....its getting too loud!!!....is this ringing in my head or is it real??")
+        print(".....i think im screaming from the pain...i cant tell...... i cant")
+        print("I can feel blood dripping from my ears.....I gotta go back up!!!")
+        print("")
+        print("-20 HP")
+        print("-15 Sanity")
+        damage = 20
+        psychological_damage = 15
+        player_hp = player_hp -damage 
+        sanity = sanity - psychological_damage
+        continue
+    else:
+        print("come on...think!!!")
+        print("")
+        print("")
+        continue
+print("As i start walking up the flight of stairs I look up the center of the staircase spiral.....")
+print("")
+print("Could this really be a bunker?......the floors seem to go on forever...")
+print("")
+print("oh man, i dont know when to stop or even if I should.......")
+print("")
+print("it looks like i finally reached a floor with a couple of doors")
+print("****BANG****")
+print("")
+print("Oh no! the door from the first floor I was on finally gave way!")
+print("")
+print("I can hear the growls from that thing again!")
+print("")
+print("Quick! I need to do something!")
+print("")
+def fourth_menu():
+    print("             ===Choose Wisely===")
+    print("")
+    print("     [Name:",name,"Sanity:", sanity,"HP:", player_hp, "]                        ")
+    print("")
+    print("|------------------------------------------|")
+    print("|1. Keep running up the stairs.            |")
+    print("|------------------------------------------|")
+    print("|2. Take the first door on your right.     |")
+    print("|------------------------------------------|")
+    print("|3. Take the first door on your left.      |")
+    print("|------------------------------------------|")
+    print("|4. Grow a pair and fight back!            |")
+    print("|------------------------------------------|")
+    print("")
+while True:
+    fourth_menu()
+    option = input("Choose an option:")
+    if option == "1":
+        print("")
+        print("You start to run up the stairs, but notice its becoming harder to keep going... ")
+        print("suddenly you notice your body is much much heavier....")
+        print("you suddenly collapse under the crushing weight.....what is this????")
+        print("I feel like I weigh a thousand pounds!!!")
+        print("you can barely move, but with your last remaining strength you roll backwards")
+        print("and let gravity push you back down the stairs.....")
+        print("you hear a snap in your left arm...it appears to be fractured....")
+        print("you make it back down the stairs to where the doors are...your weight is now normal.")
+        print("")
+        print("I gotta figure out something else!")
+        print("")
+        print("-15 HP")
+        print("-5 Sanity")
+        damage = 15
+        psychological_damage = 5
+        player_hp = player_hp - damage
+        sanity = sanity - psychological_damage
+        continue
+    if option == "2":
+        print("")
+        print("you turn right and open the door...")
+        print("The door opens up into a large open facility...")
+        print("This appears to be some sort of research center.")
+        print("***grrrrrrrrrrrrr***")
+        print("oh no! its only a floor away now!")
+        print("I have to shut that thing out for good!")
+        print("I turn around and shut the door....I grab a large metal shelf and barricade the door!")
+        print("there......maybe now I can finally catch my breath.")
+        print("")
+        break
+    if option =="3":
+        print("")
+        print("you turn to your left and open the door...")
+        print("Oh No!.......its a closet! a dead end...")
+        print("")
+        print("***grrrrrrrrr***")
+        print("")
+        print("its getting closer! I have to hurry!")
+        continue
+    if option =="4":
+        print("")
+        print("perhaps I can slow this thing down......")
+        print("maybe I can even hurt it.....")
+        print("I dont know anything about that thing, for all I know it could be blind....")
+        print("I have to find something to use as a weapon, I dont want to risk hand to hand combat...")
+        print("***looks around for something to use***")
+        print("There! a heavy metal pipe!")
+        print("Now lets see......there you are....about 3 floors below...")
+        print("all I need is a clear view and........THERE!")
+        print("***throws pipe***")
+        print("as the pipe flys at the entity...the space where I threw it opened up into a void ")
+        print("***SMACK***")
+        print("owwwww! what happened! theres blood pouring down my neck!!!")
+        print("it was....the pipe.....the same pipe....but how...thats not possible!")
+        print("***grrrr***")
+        print("I cant stay here to fight it...I couldnt even hurt it with a weapon..")
+        print("I have to get out of here!!")
+        print("")
+        damage = 15
+        player_hp = player_hp - damage
+        print("")
+        print("-15 HP")
+        print("")
+        continue
+    else:
+        print("come on...think!!!")
+        print("")
+        print("")
+        continue
+
+print("")
+print("I look back at the barricaded door.....")
+print("")
+print("I hear that thing growl and twist the metal of the door....")
+print("")
+print("just when I think the barrier is about to give way.....that...thing...stops..")
+print("")
+print("I dont waste any time, I still got to find a way out of here!")
+print("")
+print("I look around and see many different kinds of research machines..")
+print("")
+print("however, these machines look old but at the same time......they look new.")
+print("")
+print("its clear these machines were created without in the 1930's.....maybe mid 1940's??")
+print("")
+print("but these machines are still warm....how is that possible?...the lower floors looked to be over 70 years old...")
+print("")
+print("I wonder if there is any clues as to what is happening laying around this facility....")
+print("")
+print("I better find something useful...")
+print("")
+def fifth_menu():
+    print("             ===Choose Wisely===")
+    print("")
+    print("     [Name:",name,"Sanity:", sanity,"HP:", player_hp, "]                        ")
+    print("")
+    print("|------------------------------------------|")
+    print("|1. Check papers on desk.                  |")
+    print("|------------------------------------------|")
+    print("|2. Read newspaper found on the floor.     |")
+    print("|------------------------------------------|")
+    print("|3. Open the wall locker.                  |")
+    print("|------------------------------------------|")
+    print("|4. Open the door at the other end.        |")
+    print("|------------------------------------------|")
+    print("")
+
+def yesorno():
+    print("|------------------------------------------|")
+    print("|1. Yes.                                   |")
+    print("|------------------------------------------|")
+    print("|2. No.                                    |")
+    print("|------------------------------------------|")
+
+while True:
+    fifth_menu()
+    option = input("Choose an option:")
+    if option == "1":
+        print("")
+        print("huh....whats this paper?.....")
+        print("")
+        print("")
+        print("")
+        print("September 18, 1940")
+        print("")
+        print("     Its been nearly three weeks since that damn thing caught the attention of the military, God if ")
+        print("I could have one wish it would be to go back to the way things were. I cant sleep, I cant eat, I cant ")
+        print("even smile anymore knowing that thing exists. How can I? How can anyone stand to live any longer knowing this.")
+        print("This defeats the purpose of doing anything anymore, I have no motivation, I HAVE NOTHING! I didnt sign ")
+        print("up for this, I was supposed to help fight the nazis. Instead here I am, sent to this hellhole to deal")
+        print("the anomoly. Im no physicist... who the hell do they think I am? Im not qualified to deal with these kinds ")
+        print("of things. I know nothing about anti-matter or the space where that thing dwells, but I do know that its ")
+        print("intentions are beyond what any nightmare can produce.... It sent its bait and we nibbled, I have to....")
+        print("")
+        print("")
+        print("The paper is ripped, I cannot finish reading...")
+        print("")
+        continue
+    elif option == "2":
+        print("")
+        print("Heres a Newspaper.....")
+        print("")
+        print("")
+        print("")
+        print("September 4, 1940")
+        print("                                 ===Colorado Post====")
+        print("                                   A Town no more!")
+        print("    ")
+        print("     The Nation is in shock this morning as we mourn the loss of over 300 people from a small town ")
+        print("right here in our own beloved state in a scene which can only be described as pure chaos. As authorities   ")
+        print("begin their investigation new details are emerging of a town that has gone completely mad. It appears that ")
+        print("everyone of all ages has attacked each other to the point of death for what appears to be for no reason. Entire")
+        print("families have been found with offensive wounds on each other with no one spared. Authorities have yet to make  ")
+        print("any connection between the dead other than the fact everyone had left their radios on. The sherrif has stated ")
+        print("that this may be beyond their level of expertise and have initiated the FBI to come take over shortly. We at ")
+        print("the Colorado post are committed to bringing you the most up to date news on this developing story.    ")
+        print("")
+        print("")
+        print("Oh my God thats awful!....those poor people!")
+        print("")
+        print("")
+        continue
+    elif option == "3":
+            print("")
+            print("I wonder whats in here......")
+            print("oh wow!...Jackpot!")
+            print("")
+            print("==you have found food and water==")
+            print("")
+            print("")
+            yesorno()
+            decision = input("Would you like to ingest this?")
+            if decision == "1":
+                print("You ate and drank")
+                print("")
+                anxiety_relief = 10
+                health = 10
+                sanity = sanity + anxiety_relief
+                player_hp = player_hp + health
+                print("+10 HP!")
+                print("+10 Sanity!")
+                continue
+            else:
+                print("")
+                print("I dont think I can stomach that right now....")
+                print("")
+                continue
+    elif option == "4":
+        print("")
+        print("you walk to the door at the end of the room...")
+        print("...I cant believe any of this....")
+        print("I guess theres nothing to do but keep moving forward...")
+        print("as you approach the door that low growl returns...")
+        print("except this time its not coming directly from that thing....")
+        print("this time its coming from everywhere...and no where....")
+        print("its like its coming from within everything.....the whole room is vibrating!!!")
+        print("you look back and see that the whole room is expanding!!!")
+        print("except the room isnt growing in size....its splitting apart where I percieve the edges of objects... ")
+        print("The wall locker is now several inches away from the wall... and inbetween both is that void!")
+        print("Oh my God! its the same void from within that....thing!")
+        print("I gotta go NOW!!!!!")
+        print("")
+        print("you quickly open the door.... a blinding white light engulfs you......")
+        print("well its not like I can stay here...I have no choice....")
+        print("....you run through the door.....")
+        print("")
+        break
+            
+
+
+        
+            
+
+
+                
+        
+
+
+
+
+    
